@@ -1,0 +1,78 @@
+/* Navbar styles */
+.navbar {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center vertically */
+    background-color: #007bff; /* Primary color for background */
+    padding: 15px 20px; /* Padding around navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo styles */
+.navbar-logo {
+    display: flex; /* Flexbox for logo alignment */
+    align-items: center; /* Center logo elements vertically */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.logo {
+    height: 40px; /* Height for logo image */
+    margin-right: 10px; /* Space between logo image and text */
+}
+
+.logo-text {
+    color: white; /* Logo text color */
+    font-weight: bold; /* Bold text for emphasis */
+    font-size: 1.5em; /* Larger font size for visibility */
+}
+
+/* Navbar link styles */
+.navbar-links {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Flex for horizontal layout */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.navbar-links li {
+    margin-left: 20px; /* Space between each link */
+}
+
+.navbar-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text for links */
+    font-weight: 500; /* Medium weight for readability */
+    padding: 8px 10px; /* Padding around links */
+    position: relative; /* For hovering effect */
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten the background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align left */
+    }
+    
+    .navbar-links {
+        margin-top: 10px; /* Space above links */
+        flex-direction: column; /* Column layout for links */
+    }
+    
+    .navbar-links li {
+        margin-left: 0; /* Reset margin for left alignment */
+        margin-bottom: 10px; /* Space between links */
+    }
+}
+
+.logo-text {
+  color: White;
+  text-decoration: none;
+
+  /* Add any additional styling as needed */
+}

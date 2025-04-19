@@ -1,0 +1,285 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light background color */
+}
+
+/* Dashboard container styles */
+.dashboard-container {
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 40px auto; /* Center the dashboard with space at the top */
+    padding: 30px;
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Heading styles */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger text for the heading */
+    text-align: center; /* Centered heading */
+}
+
+/* Link styles */
+.link-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.link-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    padding: 12px; /* Cell padding */
+    text-align: left; /* Left aligned text */
+    border-bottom: 1px solid #dee2e6; /* Table row borders */
+}
+
+/* Header styles */
+th {
+    background-color: #f8f9fa; /* Light grey background for headers */
+    color: #495057; /* Darker text color */
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+}
+
+/* Action links */
+td a {
+    margin-right: 10px; /* Space between action links */
+    color: #007bff; /* Primary color for text links */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Transition effect */
+}
+
+td a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+
+    /* Stack the links vertically on small screens */
+    .link-button {
+        display: block;
+        margin-bottom: 10px; /* Space between stacked links */
+        width: 100%;
+    }
+
+    /* Make table more readable on small devices */
+    table {
+        display: block; /* Allow scrolling */
+        overflow-x: auto; /* Horizontal scrollbar */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    td {
+        display: block; /* Stack cells vertically */
+        text-align: right; /* Right-align for better readability */
+    }
+
+    td a {
+        display: block; /* Full width links */
+        margin-top: 5px; /* Space between links */
+    }
+}
+
+
+
+/* Form container styles */
+.issue-form-container {
+    max-width: 600px; /* Limit the width for larger screens */
+    margin: 40px auto; /* Center the form with space at the top */
+    padding: 30px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+}
+
+/* Heading styles */
+h2 {
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+}
+
+/* Label styles */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 10px; /* Space between label and input */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside the inputs */
+    margin-bottom: 20px; /* Space below each input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+/* Textarea styles */
+textarea {
+    min-height: 120px; /* Minimum height for the description */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Button styles */
+button {
+    background-color: #007bff; /* Primary color button */
+    color: white; /* White text */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    width: 100%; /* Full width button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .issue-form-container {
+        padding: 15px; /* Less padding on smaller devices */
+    }
+    
+    h2 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+}
+
+
+
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Soft background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for issue details */
+.issue-detail-container {
+    max-width: 600px; /* Limit width for larger screens */
+    margin: 40px auto; /* Center the container */
+    padding: 30px; /* Padding for spacing */
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Heading styles */
+h2 {
+    color: #333; /* Darker color for the heading */
+    font-size: 2em; /* Larger heading size */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center align it */
+}
+
+/* Paragraph styles */
+p {
+    color: #555; /* Slightly lighter text */
+    font-size: 1.1em; /* Normalized font size for body */
+    margin: 10px 0; /* Space above and below */
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Standard font size */
+    margin-right: 10px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Edit button styles (Primary Color) */
+button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.edit-button {
+    background-color: #007bff; /* Blue color for edit button */
+    color: white;
+    width:20%;
+    margin-top:20px;
+    align-item:center; /* White text */
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Delete button styles (Destructive Color) */
+.delete-button {
+    background-color: #dc3545; /* Red color for delete button */
+    color: white; 
+    width:20%;
+    margin-top:20px;
+    align-item:center; /* White text */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+     /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .issue-detail-container {
+        padding: 20px; /* Adjust padding on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller heading size for mobile */
+    }
+
+    p {
+        font-size: 1em; /* Slightly smaller paragraph text */
+    }
+}
+
